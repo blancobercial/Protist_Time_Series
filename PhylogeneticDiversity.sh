@@ -16,3 +16,6 @@ done
 for f in *.fasta; do
 megacc -a  -f Fasta -d $f -o $f.avedist.txt
 done
+
+#contatenate the output files, including the name of the file in the first column, and the average distance in the second column. This will allow to trace back station to files
+awk 'BEGIN{FS=OFS="\t"} FNR == 3{print FILENAME"\t"$0}' *avedist >  all_averages.txt
