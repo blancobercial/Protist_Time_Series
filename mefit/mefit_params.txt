@@ -1,0 +1,14 @@
+CASPER Parameters:
+-  Number of threads for parallel processing : 40
+-  K-mer size                                : 5
+-  Threshold for difference of quality score : 20
+-  Threshold for mismatching ratio           : 0.1
+-  Minimum length of overlap                 : 15
+-  Using Jellyfish                           : true
+
+
+Merge and Quality Filter Parameters:
+Quality Filtering Method -  meep
+Filtering Threshold -  0.1
+Keep non-overlapping reads -  False
+Patch length for non-overlapping reads -  15
